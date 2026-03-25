@@ -1,0 +1,410 @@
+        :root {
+            --primary-purple: #3d1b63; /* Main deep purple from image */
+            --accent-cyan: #00d1ff;   /* Glowing cyan from image */
+            --accent-gold: #ffd700;   /* Gold from the lamp */
+            --light-text: #f0e8ff;    /* A slightly off-white for text */
+            --dark-background: #1a0933; /* Very dark purple for background */
+            --mid-purple: #2c1d4a; /* Lighter purple for sections */
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--dark-background); /* Fallback */
+            background-image: linear-gradient(180deg, var(--dark-background) 0%, var(--primary-purple) 100%);
+            color: var(--light-text);
+        }
+
+        /* --- Navigation Bar --- */
+        .navbar {
+            background-color: var(--primary-purple);
+            padding: 1rem 0;
+            border-bottom: 2px solid var(--accent-cyan);
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--accent-cyan) !important;
+        }
+        
+        .navbar-brand .lamp-text, /* Using lamp-text from previous version */
+        .navbar-brand .bite-text {
+            color: #fff;
+        }
+
+        .img {
+            height: 60px;
+            width: 60px;
+            margin-right: 10px;
+            border-radius: 50%;
+            border: 2px solid var(--primary-purple);
+            border-radius: 50%;
+        }
+
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: var(--accent-cyan) !important;
+        }
+        
+        .navbar .btn-login,
+        .navbar .btn-search {
+            background-color: var(--accent-cyan); /* Fallback */
+            background-image: linear-gradient(45deg, var(--accent-cyan) 0%, #89f7ff 100%);
+            color: var(--primary-purple);
+            font-weight: 600;
+            border: none;
+            margin-left: 10px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .carousel-caption .btn,
+        .translator-section .btn,
+        .card .btn,
+        .modal-body .btn,
+        section a.btn { /* General rule for main buttons */
+            background-color: var(--accent-cyan); /* Fallback */
+            background-image: linear-gradient(45deg, var(--accent-cyan) 0%, #89f7ff 100%);
+            color: var(--primary-purple);
+            font-weight: 600;
+            border: none;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .navbar .btn-login:hover,
+        .navbar .btn-search:hover,
+        .carousel-caption .btn:hover,
+        .translator-section .btn:hover,
+        .card .btn:hover,
+        .modal-body .btn:hover,
+        section a.btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px var(--accent-cyan);
+        }
+
+        .dropdown-menu {
+            background-color: var(--primary-purple);
+        }
+        
+        .dropdown-item {
+            color: #fff;
+        }
+
+        .dropdown-item:hover {
+            background-color: #495057;
+            color: var(--accent-cyan);
+        }
+
+        /* --- Hero Slider --- */
+        .carousel-item {
+            height: 90vh;
+            min-height: 300px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .carousel-caption {
+            bottom: 40%;
+            left: 10%;
+            right: auto;
+            text-align: left;
+            transform: translateY(50%);
+            background-color: rgba(26, 9, 51, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid var(--accent-cyan);
+            max-width: 450px;
+        }
+        
+        .carousel-caption h5 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+        }
+
+        .carousel-caption p {
+            font-size: 1.2rem;
+            color: var(--light-text);
+        }
+        
+        .social-icons {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            z-index: 1000;
+        }
+        
+        .social-icons a {
+            display: block;
+            margin: 10px 0;
+            color: var(--primary-purple);
+            background-color: var(--accent-cyan);
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icons a:hover {
+            background-color: var(--accent-cyan);
+            color: #fff;
+        }
+
+        /* --- Sections --- */
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: var(--accent-cyan);
+            text-shadow: 0 0 10px var(--accent-cyan);
+        }
+
+
+
+
+        .welcome-section .col-md-6{
+            height: 120% ;
+            width:50%;
+            padding: 2.5rem;
+            border-radius: 40px;
+            background-color: #ffffff; /* White background */
+            color: #343a40; /* Dark text for readability */
+        }
+        .welcome-section h2 {
+            color: var(--primary-purple); /* Use a theme color for the heading */
+        }
+        
+        .bg-tan { /* Remapped to use purple gradient */
+             background-color: var(--mid-purple); /* Fallback */
+             background-image: linear-gradient(180deg, var(--mid-purple) 0%, var(--primary-purple) 100%);
+        }
+        
+        /* --- Famous Dishes Accordion --- */
+        .accordion-item {
+            background-color: transparent;
+            border: 1px solid var(--primary-purple);
+        }
+        .accordion-button {
+            background-color: var(--primary-purple);
+            color: var(--light-text);
+        }
+        .accordion-button:not(.collapsed) {
+            background-image: linear-gradient(45deg, var(--accent-cyan) 0%, #89f7ff 100%);
+            color: var(--primary-purple);
+        }
+        .accordion-body {
+            background-color: rgba(255, 255, 255);
+            color: var(--dark-text);
+        }
+
+        /* --- Translator --- */
+        .translator-section {
+             background-color: var(--mid-purple); /* Fallback */
+             background-image: linear-gradient(180deg, var(--mid-purple) 0%, var(--primary-purple) 100%);
+        }
+        .translator-section .form-control {
+            height: 150px;
+            background-color: white;
+            color: var(--primary-purple);
+            border-color: var(--primary-purple);
+        }
+
+        .translator-section .form-control::placeholder { /* Style for placeholder text */
+            color: var(--mid-purple);
+            opacity: 0.5; /* Makes it visible but distinct from user input */
+        }
+
+        /* --- Popular Dishes Cards --- */
+        .card {
+            border: 3px solid var(--primary-purple);
+            box-shadow: 0 4px 15px rgba(0, 209, 255, 0.1);
+            background-image: none;
+            background-color: white;;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            color: var(--primary-purple);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 30px rgba(0, 209, 255, 0.3);
+        }
+
+       .py-5.bg-tan1 {
+            background-image: url('../images/foods.png'); /* Ensure correct path */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 50vh; /* Full screen height */
+            width: 100%;
+            position: relative; /* To ensure proper stacking */
+            background-repeat: no-repeat; /* Prevent repetition of the background image */
+        }
+
+           .py-5.bg-tan2 {
+            background-image: url('../images/foods.png'); /* Ensure correct path */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            height: 50vh; /* Full screen height */
+            width: 100%;
+            position: relative; /* To ensure proper stacking */
+            background-repeat: no-repeat; /* Prevent repetition of the background image */
+        }
+        
+        /* --- Thanks Section --- */
+                .appreciation-card {
+            position: relative;
+            height: 500px;
+            border-radius: 20px;
+            background-size: cover;
+            background-position: center;
+            overflow: hidden; /* Ensures overlay and content respect the border-radius */
+            color: white;
+            box-shadow: 0 8px 30px rgba(0, 209, 255, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .appreciation-card:hover {
+            transform: scale(1.03);
+        }
+
+        .appreciation-card .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0.4) 60%); /* Darker at the bottom */
+            z-index: 1;
+        }
+
+        .appreciation-card .card-content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .appreciation-card .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 43%;
+            border: 3px solid var(--accent-cyan);
+            position: absolute;
+            bottom: 100px; /* Position it above the footer text */
+            left: 20px;
+        }
+
+        .appreciation-card .card-header-text {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        .appreciation-card .card-header-text p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .appreciation-card .card-footer-text {
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+
+        .appreciation-card .card-footer-text h5 {
+            margin-bottom: 0;
+            font-weight: bold;
+        }
+
+        .appreciation-card .card-footer-text p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+
+        .podcast-card {
+            background-image: white;
+            border: 1px solid var(--primary-purple);
+            overflow: hidden; /* To make image rounding work */
+            margin-bottom: 2rem;
+        }
+
+        .podcast-card .card-body {
+            padding: 2rem;
+        }
+
+        .podcast-card .podcast-title {
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            color: var(--dark-text);
+        }
+
+        .podcast-card .title-bar {
+            width: 50px;
+            height: 4px;
+            background-color: var(--accent-gold);
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 2px;
+        }
+
+        .podcast-card .text-muted {
+            color: var(--dark-text) !important;
+            opacity: 0.7;
+        }
+
+        .podcast-card .podcast-controls {
+            margin-top: 1.5rem;
+        }
+
+        .podcast-card .podcast-controls .btn {
+            background-color: var(--dark-background);
+            color: var(--primary-purple);
+            border: 1px solid var(--primary-purple);
+            margin-right: 10px;
+            opacity: 0.8;
+            transition: opacity 0.2s ease;
+        }
+
+        .podcast-card .podcast-controls .btn:hover {
+            opacity: 1;
+        }
+
+        .podcast-card img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .clipped-oblique-left {
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+        }
+
+        .clipped-oblique-right {
+             clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        
+        /* --- Footer --- */
+        .footer {
+            background-color: var(--primary-purple);
+            border-top: 2px solid var(--accent-cyan);
+            color: white;
+        }
+
+        /* --- Login Modal --- */
+        .modal-content {
+            background-color: var(--primary-purple);
+            background-image: linear-gradient(180deg, var(--dark-background) 0%, var(--primary-purple) 100%);
+            border: 2px solid var(--accent-cyan);
+            color: var(--light-text);
+        }
+        .modal-header, .modal-footer {
+            border: none;
+        }

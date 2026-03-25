@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aladdin Lamp</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/all.css"/>
+        
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <img src="images/logo.png" class="img" alt="logo">
+            <a class="navbar-brand" href="#">Aladdin <span class="bite-text">Lamp</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Magic Carpet Pizza</a></li>
+                            <li><a class="dropdown-item" href="#">Genie's Burger</a></li>
+                            <li><a class="dropdown-item" href="#">Sultan's Salad</a></li>
+                            <li><a class="dropdown-item" href="#">Cave of Wonders Chicken</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+                <form class="d-flex me-3">
+                    <input class="form-control me-2" type="search" placeholder="Search for a Wish" aria-label="Search">
+                </form>
+                <button class="btn btn-search" data-bs-toggle="modal" data-bs-target="#searchModal">Search</button>
+                <button class="btn btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">Log in</button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Social Icons -->
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+
+    <!-- Hero Slider -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('images/1.png')">
+                <div class="carousel-caption">
+                    <h5>CHICKEN</h5>
+                    <p>A wish for flavor that comes true in every magical bite!</p>
+                    <a href="#" class="btn">Make a Wish</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/pizza.png')">
+                <div class="carousel-caption">
+                    <h5>PIZZA</h5>
+                    <p>An enchanting journey of taste on a magic carpet of dough.</p>
+                     <a href="#" class="btn">Make a Wish</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('images/salad.png')">
+                 <div class="carousel-caption">
+                    <h5>SALAD</h5>
+                    <p> A treasure trove of freshness, fit for a Sultan's palate.</p>
+                     <a href="#" class="btn">Make a Wish</a>
+                </div>
+            </div>
+             <div class="carousel-item" style="background-image: url('images/burger.png')">
+                 <div class="carousel-caption">
+                    <h5>BURGER</h5>
+                    <p>Your wish for the perfect burger, granted by the genie himself.</p>
+                     <a href="#" class="btn">Make a Wish</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Welcome Section -->
+    <section class="py-5 welcome-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    
+                    <h2>Welcome To Aladdin's Lamp</h2>
+                    <p>Where your culinary wishes come true! Step into a world of enchanted flavors and gourmet treasures. Whether you're wishing for a juicy burger, a magical pizza, or a salad from the Sultan's garden, we grant your desires with every dish. Rub the lamp, make a wish, and let us serve you an unforgettable experience.</p>
+                    <a href="#" class="btn">Learn More</a>
+                
+                </div>
+                <div class="col-md-5">
+                    <img src="images/rest.png" class="img-fluid rounded" alt="Restaurant Interior">
+                </div>
+            </div>
+        </div>
+    </section
+
+    <!-- Famous Dishes Section -->
+    <section class="py-5 bg-tan">
+        <div class="container">
+            <h2 class="section-title">The Most Famous Dishes In Our Restaurant</h2>
+            <div class="accordion" id="dishesAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Cave of Wonders Chicken
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#dishesAccordion">
+                        <div class="accordion-body">
+                            A treasure of tender chicken, seasoned with secret spices from the far east, and fried to a golden perfection. A dish so good, it's worth entering a forbidden cave for.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            The Sultan's Garden Salads
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#dishesAccordion">
+                        <div class="accordion-body">
+                           A royal assortment of the freshest greens and vegetables from the Sultan's personal garden. Choose from treasures like the Royal Caesar, the Agrabah Garden Mix, or the Oasis Greek Salad
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Magic Carpet Pizzas
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#dishesAccordion">
+                        <div class="accordion-body">
+                           Take your taste buds on a magic carpet ride. From the classic 'One Jump Ahead' Pepperoni to the 'Friend Like Me' BBQ Chicken, each pizza is a new, fantastic point of view.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Translator Section -->
+    <section class="py-5 translator-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-4">
+                    <h4 class="text-center">Translate From Arabic To English</h4>
+                    <p>Write and Translate Press Here</p>
+                    <button class="btn" onclick="copyText('arabicToEnglish')">Copy</button>
+                    <textarea id="arabicToEnglish" class="form-control mb-2" placeholder="Translate"></textarea>
+                    
+                </div>
+                <div class="col-md-12 mb-4">
+                    <h4 class="text-center">Translate From Arabic To French</h4>
+                    <P>Write And Translate Press Here</P>
+                    <button class="btn" onclick="copyText('arabicToFrench')">Copy</button>
+                    <textarea id="arabicToFrench" class="form-control mb-2" placeholder="Translate"></textarea>
+                    
+                </div>
+                <div class="col-md-12 mb-4">
+                    <h4 class="text-center">Translate From Arabic To German</h4>
+                    <P>Write And Translate Press Here</P>
+                    <button class="btn" onclick="copyText('arabicToFrench')">Copy</button>
+                    <textarea id="arabicToGerman" class="form-control mb-2" placeholder="Translate"></textarea>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-5 bg-tan1">
+        <div class="container">
+            
+            </div>
+            </section>
+
+    <!-- Popular Dishes -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Popular Dishes In Our Restaurant</h2>
+            <div class="row">
+                <!-- Sample Card -->
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/salad.png" class="card-img-top" alt="Salad">
+                        <div class="card-body">
+                            <h5 class="card-title">SULTAN'S SALAD</h5>
+                            <p class="card-text">A wish granted for a taste of royality and freshness.</p>
+                            <a href="#" class="btn">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/pizza.png" class="card-img-top" alt="Pizza">
+                        <div class="card-body">
+                            <h5 class="card-title">MAGIC PIZZA</h5>
+                            <p class="card-text">A wish granted for an enchanting slice of heaven.</p>
+                            <a href="#" class="btn">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/1.png" class="card-img-top" alt="Chicken">
+                        <div class="card-body">
+                            <h5 class="card-title">GENIE'S CHICKEN</h5>
+                            <p class="card-text">A wish granted for a phenominal cosmic flavor.</p>
+                            <a href="#" class="btn">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/feast.png" class="card-img-top" alt="Meals">
+                        <div class="card-body">
+                            <h5 class="card-title">THREE WISHES FEAST</h5>
+                            <p class="card-text">A grand combination of savory roasted meats, seasoned couscous, and sweet dates, satisfying your every culinary desire.</p>
+                            <a href="#" class="btn">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/jasmin.png" class="card-img-top" alt="Meals">
+                        <div class="card-body">
+                            <h5 class="card-title">JASMIN'S OASIS SALAD</h5>
+                            <p class="card-text">A refreshing mix of fresh greens, juicy pomegranate seeds, and tender grilled chicken, topped with a zesty citrus dressing.</p>
+                            <a href="#" class="btn">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-4 col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <img src="images/wonders.png" class="card-img-top" alt="Meals">
+                        <div class="card-body">
+                            <h5 class="card-title">A CAVE OF WONDERS CURRY</h5>
+                            <p class="card-text">A rich and golden coconut curry, filled with shimmering vegetables and succulent chicken..</p>
+                            <a href="#" class="btn">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 mb-4 mx-auto">
+                    <div class="card h-100">
+                        <img src="images/carpets.png" class="card-img-top" alt="Meals">
+                        <div class="card-body">
+                            <h5 class="card-title">MAGIC CARPET PLATTER</h5>
+                            <p class="card-text">An array of vibrant hummus, falafel, and crisp vegetables served with warm, pillowy flatbread..</p>
+                            <a href="#" class="btn">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>  
+                <div class="col-md-4 col-lg-4 mb-4 mx-auto">
+                    <div class="card h-100">
+                        <img src="images/sultan.png" class="card-img-top" alt="Meals">
+                        <div class="card-body">
+                            <h5 class="card-title">SULTAN'S DELIGHTS</h5>
+                            <p class="card-text">A royal spread of spiced lamb kabobs and fluffy saffron rice fit for a king.</p>
+                            <a href="#" class="btn">DISCOVER</a>
+                        </div>
+                    </div>
+                </div>                  
+            </div>
+        </div>
+    </section>
+
+
+        <section class="py-5 bg-tan2">
+        <div class="container">
+            
+            </div>
+            </section>
+    
+     <!-- Thanks Section -->
+    <section class="py-5 bg-tan">
+        <div class="container">
+            <h2 class="section-title">.. All Thanks to Magic Crew ..</h2>
+            <div class="row justify-content-center">
+                 <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="appreciation-card" style="background-image: url('images/person1.png');">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header-text">
+                                <p>All Thanks & Appreciation</p>
+                                <p><i class="far fa-clock"></i> June 22, 2025</p>
+                            </div>
+                            <img src="images/person1.png" alt="Eng. Salem Mohamed" class="profile-pic">
+                            <div class="card-footer-text">
+                                <h5>Eng. Salem Mohamed</h5>
+                                <p>Director of UI/UX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="appreciation-card" style="background-image: url('images/person2.png');">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header-text">
+                                <p>All Thanks & Appreciation</p>
+                                <p><i class="far fa-clock"></i> June 22, 2025</p>
+                            </div>
+                            <img src="images/person2.png" alt="Eng. Mohamed Hady" class="profile-pic">
+                            <div class="card-footer-text">
+                                <h5>Eng. Mohamed Hady</h5>
+                                <p>Content Creator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="appreciation-card" style="background-image: url('images/person3.png');">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <div class="card-header-text">
+                                <p>All Thanks & Appreciation</p>
+                                <p><i class="far fa-clock"></i> June 22, 2025</p>
+                            </div>
+                            <img src="images/person3.png" alt="Eng. Jasmin Fathy" class="profile-pic">
+                            <div class="card-footer-text">
+                                <h5>Eng. Jasmin Fathy</h5>
+                                <p>Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+
+    <!-- News Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Tales from the Bazaar</h2>
+            
+            <!-- Podcast Card 1 -->
+            <div class="card podcast-card">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="images/pod1.png" class="img-fluid clipped-oblique-left" alt="Podcast">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="podcast-title">The Spice Merchant's Secret</h5>
+                            <div class="progress">
+                            <div class="progress-bar bg-info" style="width:30%"></div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Mon, Sep 22, 2025</small></p>
+                            <p class="card-text">Our passion for flavor extends to include innovation and renewal. We are always keen to provide new lovers of distinctive taste with the finest fresh ingredients and special offers.</p>
+                            <div class="podcast-controls">
+                                <button class="btn btn-sm"><i class="fas fa-podcast"></i> Podcast</button>
+                                <button class="btn btn-sm"><i class="far fa-clock"></i> 43 mins</button>
+                                <button class="btn btn-sm"><i class="fas fa-play"></i> Play Episode</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Podcast Card 2 -->
+            <div class="card podcast-card">
+                <div class="row g-0">
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="podcast-title">A Sultan's Feast</h5>
+                            <div class="progress">
+                            <div class="progress-bar bg-info" style="width:40%"></div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Fri, Sep 19, 2025</small></p>
+                            <p class="card-text">Follow our news section to stay up-to-date on the latest updates, whether it's new recipes, special events, or innovative product launches that suit all tastes. Your wish is our command.</p>
+                            <div class="podcast-controls">
+                                <button class="btn btn-sm"><i class="fas fa-podcast"></i> Podcast</button>
+                                <button class="btn btn-sm"><i class="far fa-clock"></i> 38 mins</button>
+                                <button class="btn btn-sm"><i class="fas fa-play"></i> Play Episode</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/pod2.png" class="img-fluid clipped-oblique-right" alt="Podcast">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Podcast Card 3 -->
+            <div class="card podcast-card">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img src="images/pod1.png" class="img-fluid clipped-oblique-left" alt="Podcast">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="podcast-title">Magic Carpet Cooking</h5>
+                            <div class="progress">
+                            <div class="progress-bar bg-info" style="width:40%"></div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Mon, Sep 15, 2025</small></p>
+                            <p class="card-text">We are here to share our passion for food and provide you with an exceptional experience with every visit and every dish. A whole new world of flavor awaits your discovery.</p>
+                             <div class="podcast-controls">
+                                <button class="btn btn-sm"><i class="fas fa-podcast"></i> Podcast</button>
+                                <button class="btn btn-sm"><i class="far fa-clock"></i> 45 mins</button>
+                                <button class="btn btn-sm"><i class="fas fa-play"></i> Play Episode</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Podcast Card 4 -->
+            <div class="card podcast-card">
+                <div class="row g-0">
+                    <div class="col-md-9">
+                        <div class="card-body">
+                            <h5 class="podcast-title">Genie in a Bottle Gourd</h5>
+                            <div class="progress">
+                            <div class="progress-bar bg-info" style="width:40%"></div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Fri, Sep 12, 2025</small></p>
+                            <p class="card-text">Enjoy a unique and unforgettable experience with tastes from across the seven deserts. Our chefs are always brewing new magical recipes to grant your culinary wishes.</p>
+                             <div class="podcast-controls">
+                                <button class="btn btn-sm"><i class="fas fa-podcast"></i> Podcast</button>
+                                <button class="btn btn-sm"><i class="far fa-clock"></i> 32 mins</button>
+                                <button class="btn btn-sm"><i class="fas fa-play"></i> Play Episode</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <img src="images/pod2.png" class="img-fluid clipped-oblique-right" alt="Podcast">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="section-title">Subscribe Now</h2>
+            <div class="row">
+                 <div class="col-md-3">
+                     <div class="card p-3">
+                       <p class="fw-bold">Follow the Magic</p>
+                         <i class="fab fa-whatsapp fa-3x text-success"></i>
+                         <h5 class="mt-2">WhatsApp</h5>
+                         <a href="#" class="btn btn-outline-dark mt-2">Go To Link</a>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                      <div class="card p-3">
+                        <p class="fw-bold">Follow the Magic</p>
+                         <i class="fab fa-instagram fa-3x text-danger"></i>
+                         <h5 class="mt-2">Instagram</h5>
+                         <a href="#" class="btn btn-outline-dark mt-2">Go To Link</a>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                      <div class="card p-3">
+                        <p class="fw-bold">Follow the Magic</p>
+                         <i class="fab fa-linkedin-in fa-3x text-primary"></i>
+                         <h5 class="mt-2">LinkedIn</h5>
+                         <a href="#" class="btn btn-outline-dark mt-2">Go To Link</a>
+                     </div>
+                 </div>
+                 <div class="col-md-3">
+                      <div class="card p-3">
+                        <p class="fw-bold">Follow the Magic</p>
+                         <i class="fab fa-twitter fa-3x text-info"></i>
+                         <h5 class="mt-2">Twitter</h5>
+                         <a href="#" class="btn btn-outline-dark mt-2">Go To Link</a>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/logo.png" class="img" alt="logo">
+                    <h5>The Sultan's Palace</h5>
+                    <p>Tel: 000-000-000<br>Address: EGYPT<br>Fax: 000-000-000</p>
+                </div>
+                 <div class="col-md-4">
+                    <img src="images/logo.png" class="img" alt="logo">
+                    <h5>Important Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Visit Aladdin Lamp</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Take a Magic Carpet Ride</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Consult the Genie</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <img src="images/logo.png" class="img" alt="logo">
+                    <h5>Vision</h5>
+                    <p>Three Wishes For All<br>Granting Delicious Dreams<br>Your Happiness is Our Treasure</p>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2025 Arabian Nights. All Wishes Reserved. Designed by Magical Genie; WALAA NASR.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Login to Cave of Wonders </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Secret Word</label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe">
+                            <label class="form-check-label" for="rememberMe">Remember my wish</label>
+                        </div>
+                        <button type="submit" class="btn">Log in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Custom JavaScript for translator copy button
+        function copyText(elementId) {
+            const textArea = document.getElementById(elementId);
+            textArea.select();
+            document.execCommand('copy');
+            alert('Magic words copied!');
+        }
+    </script>
+</body>
+</html>
